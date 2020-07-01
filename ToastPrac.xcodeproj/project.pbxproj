@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8641DE0F8C7B4518D8EEADF8 /* Pods_ToastPrac.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F05B9055795E33A6BE2A715C /* Pods_ToastPrac.framework */; };
 		EA08F2ED2490DD4E009B5680 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA08F2EC2490DD4E009B5680 /* AppDelegate.swift */; };
 		EA08F2EF2490DD4E009B5680 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA08F2EE2490DD4E009B5680 /* SceneDelegate.swift */; };
 		EA08F2F12490DD4E009B5680 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA08F2F02490DD4E009B5680 /* ViewController.swift */; };
@@ -16,6 +17,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		288E5721759F8DAB3E0CF56E /* Pods-ToastPrac.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToastPrac.release.xcconfig"; path = "Target Support Files/Pods-ToastPrac/Pods-ToastPrac.release.xcconfig"; sourceTree = "<group>"; };
+		6B3D4E636F00C1DEE80D0C06 /* Pods-ToastPrac.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ToastPrac.debug.xcconfig"; path = "Target Support Files/Pods-ToastPrac/Pods-ToastPrac.debug.xcconfig"; sourceTree = "<group>"; };
 		EA08F2E92490DD4E009B5680 /* ToastPrac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ToastPrac.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA08F2EC2490DD4E009B5680 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA08F2EE2490DD4E009B5680 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -24,6 +27,7 @@
 		EA08F2F52490DD4E009B5680 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA08F2F82490DD4E009B5680 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA08F2FA2490DD4E009B5680 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F05B9055795E33A6BE2A715C /* Pods_ToastPrac.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ToastPrac.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,17 +35,38 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8641DE0F8C7B4518D8EEADF8 /* Pods_ToastPrac.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5139FDA91DA1F705DEEB8125 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6B3D4E636F00C1DEE80D0C06 /* Pods-ToastPrac.debug.xcconfig */,
+				288E5721759F8DAB3E0CF56E /* Pods-ToastPrac.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		69A6CE5473C12AE4BB6F093A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F05B9055795E33A6BE2A715C /* Pods_ToastPrac.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		EA08F2E02490DD4E009B5680 = {
 			isa = PBXGroup;
 			children = (
 				EA08F2EB2490DD4E009B5680 /* ToastPrac */,
 				EA08F2EA2490DD4E009B5680 /* Products */,
+				5139FDA91DA1F705DEEB8125 /* Pods */,
+				69A6CE5473C12AE4BB6F093A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -74,9 +99,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA08F2FD2490DD4E009B5680 /* Build configuration list for PBXNativeTarget "ToastPrac" */;
 			buildPhases = (
+				0F561683C1264FE71748CE93 /* [CP] Check Pods Manifest.lock */,
 				EA08F2E52490DD4E009B5680 /* Sources */,
 				EA08F2E62490DD4E009B5680 /* Frameworks */,
 				EA08F2E72490DD4E009B5680 /* Resources */,
+				BA9D160FDC50E81870757FC2 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -132,6 +159,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		0F561683C1264FE71748CE93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ToastPrac-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BA9D160FDC50E81870757FC2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToastPrac/Pods-ToastPrac-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ToastPrac/Pods-ToastPrac-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ToastPrac/Pods-ToastPrac-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		EA08F2E52490DD4E009B5680 /* Sources */ = {
@@ -282,6 +351,7 @@
 		};
 		EA08F2FE2490DD4E009B5680 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B3D4E636F00C1DEE80D0C06 /* Pods-ToastPrac.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -300,6 +370,7 @@
 		};
 		EA08F2FF2490DD4E009B5680 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 288E5721759F8DAB3E0CF56E /* Pods-ToastPrac.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
